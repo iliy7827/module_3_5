@@ -4,7 +4,7 @@ def get_multiplied_digits(number):
     str_number = str(number)          # создаем переменную через строковое значение
     first = int(str_number [0])       # создаем переменную через числовое представление с первым символом str_number  0
     while str_number.endswith('0'):   # убираем нули в конце списка
-        str_number = str_number[:len(str_number)-1]
+        str_number = str_number[:len(str_number)-1] #
     if len(str_number) > 1:           # если длина строки больше 1 вернуть 4 * 2 * 3
         return first * get_multiplied_digits(int(str_number[1:]))
     else:
